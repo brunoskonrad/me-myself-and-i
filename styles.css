@@ -1,0 +1,49 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.myself {
+  margin: 12px 0;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
+
+.selfie {
+  overflow: hidden;
+  height: 350px;
+  width: 281.1px;
+  flex-basis: 281.1px;
+  flex-grow: 1;
+
+  box-shadow: 8px 8px #242424;
+}
+
+.selfie img {
+  width: 281.1px;
+  height: 500px;
+
+  margin-top: -150px;
+}
+
+.description {
+  margin-left: 24px;
+  flex-grow: 1;
+}
+
+.description__title {
+  font-size: 1.4rem;
+  font-family: monospace;
+  text-align: center;
+}
