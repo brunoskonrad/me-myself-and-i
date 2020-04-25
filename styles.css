@@ -11,30 +11,87 @@ body {
 .container {
   max-width: 760px;
   margin: 0 auto;
+  margin-top: 62px;
+}
+
+.fixed-header {
+  padding: 12px 0;
+  max-width: 760px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  position: fixed;
+  background-color: #eeeeee40;
+}
+
+.container section {
+  padding: 16px 12px;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+
+  font-family: monospace;
+}
+
+.navigation-list li {
+  list-style: none;
+}
+
+.navigation-list a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 3.5px solid black;
+
+  transition: all ease-in-out 350ms;
+}
+
+.navigation-list a:hover {
+  background-color: black;
+  color: white;
 }
 
 .myself {
-  margin: 12px 0;
   display: flex;
   flex-flow: nowrap column;
-  align-items: center;
 }
 
 .selfie {
   overflow: hidden;
+  flex-grow: 1;
+  margin-top: 12px;
+  box-shadow: 8px 8px #242424;
+  align-self: center;
+}
+
+.selfie--today {
   height: 350px;
   width: 281.1px;
   flex-basis: 281.1px;
-  flex-grow: 1;
-
-  box-shadow: 8px 8px #242424;
 }
 
-.selfie img {
+.selfie--yesterday {
+  width: 280px;
+  height: 373.33333333333333px;
+  flex-basis: 280px;
+}
+
+.selfie--today img {
   width: 281.1px;
   height: 500px;
 
   margin-top: -150px;
+}
+
+.selfie--yesterday img {
+  width: 280px;
+  height: 373.33333333333333px;
+
+  margin-top: -80px;
 }
 
 .description {
