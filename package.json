@@ -1,0 +1,26 @@
+{
+  "name": "bruno-konrad-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "private": true,
+  "scripts": {
+    "deploy": "now",
+    "deploy-prod": "now --prod",
+    "deploy-all": "npm run deploy && npm run deploy-prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoskonrad/me-myself-and-i.git"
+  },
+  "keywords": [],
+  "author": "Bruno Konrad <bruno.skon@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoskonrad/me-myself-and-i/issues"
+  },
+  "homepage": "https://github.com/brunoskonrad/me-myself-and-i#readme",
+  "devDependencies": {
+    "now": "^18.0.0"
+  }
+}
